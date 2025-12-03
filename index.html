@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Тест: 3D-моделювання, Warp та Noise</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; background: #f9f9f9; }
+  h1 { color: #2E86C1; }
+  .question { margin-bottom: 15px; padding: 10px; background: #fff; border-radius: 5px; box-shadow: 0 0 5px #ccc; }
+  .answers input { margin-right: 5px; }
+  button { margin-top: 20px; padding: 10px 20px; font-size: 16px; cursor: pointer; }
+  #result { margin-top: 20px; font-weight: bold; font-size: 18px; color: green; }
+</style>
+</head>
+<body>
+
+<h1>Тест: 3D-моделювання, Warp та Noise</h1>
+<form id="quizForm">
+
+<!-- Питання 1 -->
+<div class="question">
+  <p>1. Що є правильним положенням за комп’ютером під час роботи в 3D-редакторі?</p>
+  <div class="answers">
+    <label><input type="radio" name="q1" value="0"> Спина зігнута, руки на столі</label><br>
+    <label><input type="radio" name="q1" value="1"> Рівна спина, правильне освітлення, відстань до монітора 50–70 см</label><br>
+    <label><input type="radio" name="q1" value="0"> Лежачи на дивані з ноутбуком</label>
+  </div>
+</div>
+
+<!-- Питання 2 -->
+<div class="question">
+  <p>2. Чому важливо робити перерви під час роботи в Blender?</p>
+  <div class="answers">
+    <label><input type="radio" name="q2" value="0"> Щоб зекономити електроенергію</label><br>
+    <label><input type="radio" name="q2" value="1"> Щоб уникнути втоми очей і рук</label><br>
+    <label><input type="radio" name="q2" value="0"> Це необов’язково</label>
+  </div>
+</div>
+
+<!-- Питання 3 -->
+<div class="question">
+  <p>3. Які примітиви найчастіше використовують для початку моделювання?</p>
+  <div class="answers">
+    <label><input type="radio" name="q3" value="1"> Cube, Sphere, Cylinder, Cone</label><br>
+    <label><input type="radio" name="q3" value="0"> Camera, Light, Plane</label><br>
+    <label><input type="radio" name="q3" value="0"> Lamp, Sun, Point</label>
+  </div>
+</div>
+
+<!-- Питання 4 -->
+<div class="question">
+  <p>4. Що означає Edit Mode?</p>
+  <div class="answers">
+    <label><input type="radio" name="q4" value="0"> Робота з об’єктом цілком</label><br>
+    <label><input type="radio" name="q4" value="1"> Зміна геометрії (вершини, ребра, грані)</label><br>
+    <label><input type="radio" name="q4" value="0"> Перегляд сцени</label>
+  </div>
+</div>
+
+<!-- Питання 5 -->
+<div class="question">
+  <p>5. Що таке Object Mode?</p>
+  <div class="answers">
+    <label><input type="radio" name="q5" value="0"> Режим зміни текстур</label><br>
+    <label><input type="radio" name="q5" value="1"> Режим роботи з об’єктом цілком</label><br>
+    <label><input type="radio" name="q5" value="0"> Режим анімації</label>
+  </div>
+</div>
+
+<!-- Питання 6 -->
+<div class="question">
+  <p>6. Для чого використовується модифікатор Warp?</p>
+  <div class="answers">
+    <label><input type="radio" name="q6" value="0"> Додає шум на об’єкт</label><br>
+    <label><input type="radio" name="q6" value="1"> Керує плавними вигинами об’єкта</label><br>
+    <label><input type="radio" name="q6" value="0"> Додає матеріали</label>
+  </div>
+</div>
+
+<!-- Питання 7 -->
+<div class="question">
+  <p>7. Як працює Warp у Blender?</p>
+  <div class="answers">
+    <label><input type="radio" name="q7" value="1"> Використовує дві контрольні точки для деформації</label><br>
+    <label><input type="radio" name="q7" value="0"> Змінює колір об’єкта</label><br>
+    <label><input type="radio" name="q7" value="0"> Збільшує кількість вершин автоматично</label>
+  </div>
+</div>
+
+<!-- Питання 8 -->
+<div class="question">
+  <p>8. Який приклад застосування Warp?</p>
+  <div class="answers">
+    <label><input type="radio" name="q8" value="0"> Генерація рельєфу гори</label><br>
+    <label><input type="radio" name="q8" value="1"> Створення плавних вигинів</label><br>
+    <label><input type="radio" name="q8" value="0"> Застосування JPEG-текстури</label>
+  </div>
+</div>
+
+<!-- Питання 9 -->
+<div class="question">
+  <p>9. Що таке модифікатор Noise?</p>
+  <div class="answers">
+    <label><input type="radio" name="q9" value="1"> Генерує випадковий шум у геометрії</label><br>
+    <label><input type="radio" name="q9" value="0"> Робить об’єкт прозорим</label><br>
+    <label><input type="radio" name="q9" value="0"> Створює матеріал</label>
+  </div>
+</div>
+
+<!-- Питання 10 -->
+<div class="question">
+  <p>10. Для чого використовують Noise на практиці?</p>
+  <div class="answers">
+    <label><input type="radio" name="q10" value="1"> Створення природних нерівностей (гори, каміння)</label><br>
+    <label><input type="radio" name="q10" value="0"> Додавання освітлення</label><br>
+    <label><input type="radio" name="q10" value="0"> Зміна кольору</label>
+  </div>
+</div>
+
+<!-- Питання 11 -->
+<div class="question">
+  <p>11. Які параметри Noise впливають на результат?</p>
+  <div class="answers">
+    <label><input type="radio" name="q11" value="1"> Strength, Scale, Frequency</label><br>
+    <label><input type="radio" name="q11" value="0"> Brightness, Contrast</label><br>
+    <label><input type="radio" name="q11" value="0"> Hue, Saturation</label>
+  </div>
+</div>
+
+<!-- Питання 12 -->
+<div class="question">
+  <p>12. Чи можна комбінувати Warp і Noise на одному об’єкті?</p>
+  <div class="answers">
+    <label><input type="radio" name="q12" value="1"> Так</label><br>
+    <label><input type="radio" name="q12" value="0"> Ні</label>
+  </div>
+</div>
+
+<!-- Питання 13 -->
+<div class="question">
+  <p>13. Що відбувається, якщо застосувати Warp до куба між двома Empty-об’єктами?</p>
+  <div class="answers">
+    <label><input type="radio" name="q13" value="0"> Куб стає прозорим</label><br>
+    <label><input type="radio" name="q13" value="1"> Куб плавно вигинається у напрямку від першої точки до другої</label><br>
+    <label><input type="radio" name="q13" value="0"> Куб зникає</label>
+  </div>
+</div>
+
+<!-- Питання 14 -->
+<div class="question">
+  <p>14. Noise застосований до об’єкта додає:</p>
+  <div class="answers">
+    <label><input type="radio" name="q14" value="1"> Випадкові зміни геометрії</label><br>
+    <label><input type="radio" name="q14" value="0"> М’яке освітлення</label><br>
+    <label><input type="radio" name="q14" value="0"> Тіні</label>
+  </div>
+</div>
+
+<!-- Питання 15 -->
+<div class="question">
+  <p>15. Основна відмінність Warp та Noise полягає в тому, що:</p>
+  <div class="answers">
+    <label><input type="radio" name="q15" value="1"> Warp керований, Noise хаотичний</label><br>
+    <label><input type="radio" name="q15" value="0"> Warp хаотичний, Noise керований</label><br>
+    <label><input type="radio" name="q15" value="0"> Обидва роблять одне і те ж</label>
+  </div>
+</div>
+
+<button type="button" onclick="checkQuiz()">Перевірити</button>
+<div id="result"></div>
+
+<script>
+function checkQuiz() {
+    var total = 15; 
+    var score = 0;
+    for (var i = 1; i <= total; i++) {
+        var q = document.getElementsByName('q' + i);
+        for (var j = 0; j < q.length; j++) {
+            if (q[j].checked && q[j].value == "1") {
+                score++;
+            }
+        }
+    }
+    // Оцінка від 1 до 12
+    var grade = Math.round(score / total * 12);
+    if (grade < 1) grade = 1;
+    document.getElementById('result').innerHTML = "Правильних відповідей: " + score + "/" + total + 
+    "<br>Оцінка (1–12): " + grade;
+}
+</script>
+
+</body>
+</html>
